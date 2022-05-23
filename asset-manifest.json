@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/tasker-mini-app/static/js/main.0adbcc53.chunk.js",
+    "main.js.map": "/tasker-mini-app/static/js/main.0adbcc53.chunk.js.map",
+    "runtime-main.js": "/tasker-mini-app/static/js/runtime-main.8f742981.js",
+    "runtime-main.js.map": "/tasker-mini-app/static/js/runtime-main.8f742981.js.map",
+    "static/css/2.170ca112.chunk.css": "/tasker-mini-app/static/css/2.170ca112.chunk.css",
+    "static/js/2.269aa5ef.chunk.js": "/tasker-mini-app/static/js/2.269aa5ef.chunk.js",
+    "static/js/2.269aa5ef.chunk.js.map": "/tasker-mini-app/static/js/2.269aa5ef.chunk.js.map",
+    "index.html": "/tasker-mini-app/index.html",
+    "static/css/2.170ca112.chunk.css.map": "/tasker-mini-app/static/css/2.170ca112.chunk.css.map",
+    "static/js/2.269aa5ef.chunk.js.LICENSE.txt": "/tasker-mini-app/static/js/2.269aa5ef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f742981.js",
+    "static/css/2.170ca112.chunk.css",
+    "static/js/2.269aa5ef.chunk.js",
+    "static/js/main.0adbcc53.chunk.js"
+  ]
+}
