@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/tasker-mini-app/static/js/main.a24e1b13.chunk.js",
-    "main.js.map": "/tasker-mini-app/static/js/main.a24e1b13.chunk.js.map",
+    "main.js": "/tasker-mini-app/static/js/main.72c97823.chunk.js",
+    "main.js.map": "/tasker-mini-app/static/js/main.72c97823.chunk.js.map",
     "runtime-main.js": "/tasker-mini-app/static/js/runtime-main.8f742981.js",
     "runtime-main.js.map": "/tasker-mini-app/static/js/runtime-main.8f742981.js.map",
     "static/css/2.170ca112.chunk.css": "/tasker-mini-app/static/css/2.170ca112.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.8f742981.js",
     "static/css/2.170ca112.chunk.css",
     "static/js/2.269aa5ef.chunk.js",
-    "static/js/main.a24e1b13.chunk.js"
+    "static/js/main.72c97823.chunk.js"
   ]
 }
