@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import styled from 'styled-components';
 
 import {
     Button,
@@ -9,12 +8,7 @@ import {
     List
 } from "@vkontakte/vkui";
 import {Icon28AddOutline} from "@vkontakte/icons";
-import Modals from "../modals/Modals";
-
-const TaskListWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
+import {removeActiveModal, setActiveModal} from "../../../store/modalSlice";
 
 class Tasks extends Component {
 
@@ -63,7 +57,7 @@ class Tasks extends Component {
     render() {
         return (
             <>
-                <CellButton onClick={() => {}} before={<Icon28AddOutline />}>
+                <CellButton onClick={() => {dispatch(setActiveModal('newTask'))}} before={<Icon28AddOutline />}>
                     Добавить Заметку
                 </CellButton>
                 <Group>

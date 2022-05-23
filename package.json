@@ -1,13 +1,13 @@
 {
   "name": "mini-app",
   "version": "0.0.0",
-  "homepage": "./",
+  "homepage": "https://inkichy.github.io/tasker-mini-app/",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "tunnel": "vk-tunnel --insecure=1 --http-protocol=https --ws-protocol=wss --port=10888",
     "predeploy": "npm run build",
-    "deploy": "vk-miniapps-deploy"
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -32,8 +32,10 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
     "cross-env": "^7.0.3",
     "react-hot-loader": "^4.13.0",
+    "react-redux": "^8.0.2",
     "react-scripts": "^4.0.3"
   },
   "resolutions": {

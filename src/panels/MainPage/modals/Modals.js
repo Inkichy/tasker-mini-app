@@ -1,46 +1,18 @@
 import React, {Component} from 'react';
-import {Button, CellButton, FormItem, Headline, Input, ModalCard, ModalRoot} from "@vkontakte/vkui";
+import {Button, FormItem, Input, ModalPage, ModalRoot, withAdaptivity} from "@vkontakte/vkui";
+import {useDispatch, useSelector} from "react-redux";
+import {removeActiveModal} from "../../../store/modalSlice";
 
-class Modals extends Component {
+const Modals = () => {
 
-    constructor(props) {
-        super(props);
+    const dispatch = useDispatch();
+    const currentModal = useSelector(state => state.modal.activeModal)
 
-        this.state = {
-            activeModal: 'newTask',
-            modalHistory: []
-        }
-    }
-
-    setActiveModal(activeModal) {
-        activeModal = activeModal || null;
-        let modalHistory = this.state.modalHistory
-            ? [...this.state.modalHistory]
-            : [];
-
-        if (activeModal === null) {
-            modalHistory = [];
-        } else if (modalHistory.indexOf(activeModal) !== -1) {
-            modalHistory = modalHistory.splice(
-                0,
-                modalHistory.indexOf(activeModal) + 1
-            );
-        } else {
-            modalHistory.push(activeModal);
-        }
-
-        this.setState({
-            activeModal,
-            modalHistory,
-        });
-    }
-
-    render() {
-        return (
-            <ModalRoot activeModal={this.state.activeModal}>
-                <ModalCard id="newTask"
+    return (
+            <ModalRoot activeModal={currentModal}>
+                <ModalPage id="newTask"
                            header={'Добавить заметку'}
-                           onClose={() => {this.setActiveModal(null)}}
+                           onClose={() => {dispatch(removeActiveModal())}}
                 >
                     <FormItem top="Заголовок">
                         <Input type="text" defaultValue="" />
@@ -49,10 +21,9 @@ class Modals extends Component {
                         <Input type="text" defaultValue="" />
                     </FormItem>
                     <Button onClick={() => {}}>Создать</Button>
-                </ModalCard>
+                </ModalPage>
             </ModalRoot>
-        );
-    }
+    );
 }
 
 export default Modals;
